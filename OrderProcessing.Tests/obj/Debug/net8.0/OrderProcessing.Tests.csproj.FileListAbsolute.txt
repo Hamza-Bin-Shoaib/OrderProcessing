@@ -105,3 +105,4 @@ D:\Coding\Repos\OrderProcessing.Tests\obj\Debug\net8.0\refint\OrderProcessing.Te
 D:\Coding\Repos\OrderProcessing.Tests\obj\Debug\net8.0\OrderProcessing.Tests.pdb
 D:\Coding\Repos\OrderProcessing.Tests\obj\Debug\net8.0\OrderProcessing.Tests.genruntimeconfig.cache
 D:\Coding\Repos\OrderProcessing.Tests\obj\Debug\net8.0\ref\OrderProcessing.Tests.dll
+D:\Coding\Repos\OrderProcessing.Tests\obj\Debug\net8.0\OrderProcessing.Tests.sourcelink.json
