@@ -20,3 +20,13 @@ Tests can also run by selecting test dropdown on top of VS studio
 # Branching Strategy
 master (Main Branch): Stable production-ready code.
 dev (Development Branch): Active development branch where features and fixes are integrated before merging into master.
+
+# CI/CD Setup
+The pipeline runs on push and pull requests to the master and dev branches.
+It performs the following steps:
+Checkout Code – Pulls the latest code from the repository.
+Setup .NET – Installs .NET 8 runtime and SDK.
+Restore Dependencies – Runs dotnet restore to install project dependencies.
+Build the Project – Runs dotnet build to compile the application.
+Run Tests – Executes unit tests using dotnet test.
+
