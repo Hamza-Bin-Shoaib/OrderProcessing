@@ -1,0 +1,29 @@
+﻿@model OrderProccessing.Models.Order
+@{
+    ViewData["Title"] = "Order Entry";
+}
+
+<h2>Place Your Order</h2>
+
+<form asp-action="ProcessOrder" method="post">
+    <div>
+        <label>Order Amount ($):</label>
+        <input asp-for="Amount" class="form-control" placeholder="Enter amount" value="" />
+        <span asp-validation-for="Amount" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>Customer Type:</label>
+        <select asp-for="CustomerType" class="form-control">
+            <option value="" disabled selected> Select Customer Type </option>
+            <option value="New">New</option>
+            <option value="Loyal">Loyal</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Submit Order</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
